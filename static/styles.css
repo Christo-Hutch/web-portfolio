@@ -8,14 +8,22 @@
 /* Light Mode variables */
 :root {
   --bg-color: #ffffff;
-  --titl-cont-color: #C9C9C9
+  --titl-conta-color: #ffffff;
+  --titl-text-color: #000000;
+  --btn-shadow-color: rgba(0, 0, 0, 0.2);
+  --btn-color: #a3a3a3;
+  --btn-text-color: #000000;
 }
 
 /* Dark Mode variables */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #121212;
-    --titl-cont-color: #636363
+    --titl-conta-color: #808080;
+    --titl-text-color: #ffffff;
+    --btn-shadow-color: rgba(255, 255, 255, 0.2);
+    --btn-color: #494949;
+    --btn-text-color: #ffffff;
   }
 }
 
@@ -37,29 +45,34 @@ body {
 }
 
 .title-container, .button-row{
+    display: flex;
     width: 100%;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-container {
-    display: flex;
     height: 45%;
-    background-color: var(--titl-cont-color);
+    background-color: var(--titl-conta-color);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
     padding: 10px;
-    color: white;
+    color: var(--titl-text-color);
     font-weight: bold;
     font-size: larger;
-    justify-content: center;
-    align-items: center;
+    z-index: 2;
 }
 
 .button-row {
-    display: flex;
+    position: relative;
     height: 10%;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    z-index: 1;
+    transform: translateY(-100%); 
+    opacity: 0;
+    animation: slideOut 0.8s ease-out forwards;
+    animation-delay: 0.5s;
 }
 
 .homepg-btn {
@@ -68,8 +81,26 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 15px;
-    background-color: black;
-    color: white;
+    border: 0px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
     font-weight: bold;
     font-size: larger;
+}
+
+.homepg-btn:hover {
+    background-color: #747474;
+    box-shadow: 5px 5px 10px 2px var(--btn-shadow-color);
+    cursor: pointer;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
