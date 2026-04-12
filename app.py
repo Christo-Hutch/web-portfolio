@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
+import os
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def projects_page():
 @app.route('/download/<filename>')
 def download_file(filename):
     return send_from_directory(
-        directory=UPLOAD_DIRECTORY, 
+        directory="files", 
         path=filename, 
         as_attachment=True
     )
