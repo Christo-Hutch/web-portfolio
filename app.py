@@ -10,5 +10,13 @@ def homepage():
 def projects_page():
     return render_template("projects.html")
 
+@app.route('/download/<filename>')
+def download_file(filename):
+    return send_from_directory(
+        directory=UPLOAD_DIRECTORY, 
+        path=filename, 
+        as_attachment=True
+    )
+
 if __name__ == '__main__':
     app.run()
