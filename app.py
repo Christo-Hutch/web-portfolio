@@ -12,12 +12,15 @@ def projects_page():
     return render_template("projects.html")
 
 @app.route('/download/<filename>')
-def download_file(filename):
-    return send_from_directory(
-        directory="files", 
-        path=filename, 
-        as_attachment=True
-    )
+def download_file(filename, pagename):
+    try:
+        return send_from_directory(
+            directory="files", 
+            path=filename, 
+            as_attachment=True
+        )
+    except:
+        return render_template(pagename)
 
 if __name__ == '__main__':
     app.run()
