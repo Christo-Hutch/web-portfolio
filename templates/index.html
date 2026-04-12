@@ -20,6 +20,7 @@
                 <button class="homepg-btn">My Journey</button>
                 <button class="homepg-btn" onclick="window.open('https://github.com/Christo-Hutch', '_blank');">GitHub</button>
                 <button class="homepg-btn">Contact Info</button>
+                <button class="homepg-btn" onclick="window.location.href='{{ url_for('download_file', filename='CV.pdf', pagename='index.html') }}'">CV / Resume</button>
             </div>
         </div>
     </body>
