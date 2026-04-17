@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code By CFH - Homepage</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="title-container">
+                <h1>CODE BY Chris F Hutchinson</h1>
+            </div>
+
+            <div class="nav-row">
+                <a href="{{ url_for('projects_page') }}"class="homepg-btn">Projects</a>
+                <a href="{{ url_for('journey_page') }}"class="homepg-btn">My Journey</a>
+                <a class="homepg-btn" onclick="window.open('https://github.com/Christo-Hutch', '_blank');">GitHub</a>
+                <a href="{{ url_for('contact_page') }}"class="homepg-btn">Contact Info</a>
+            </div>
+        </div>
+    </body>
+</html>

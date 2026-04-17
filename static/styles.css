@@ -1,0 +1,122 @@
+/* Light Mode variables */
+:root {
+  --bg-color: #ffffff;
+  --titl-conta-color: #ffffff;
+  --titl-text-color: #000000;
+  --btn-shadow-color: rgba(0, 0, 0, 0.2);
+  --btn-color: #a3a3a3;
+  --btn-text-color: #000000;
+}
+
+/* Dark Mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --titl-conta-color: #808080;
+    --titl-text-color: #ffffff;
+    --btn-shadow-color: rgba(255, 255, 255, 0.2);
+    --btn-color: #494949;
+    --btn-text-color: #ffffff;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--titl-text-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.main-container {
+    display: flex;
+    width: 75%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container, .button-row{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    height: clamp(100px, 45%, 300px);
+    background-color: var(--titl-conta-color);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--titl-text-color);
+    font-weight: bold;
+    font-size: larger;
+    z-index: 2;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: clamp(30px, 10%, 100px);
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-100%); 
+    opacity: 0;
+    animation: slideOut 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.homepg-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: clamp(150px, 15%, 300px);
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    font-weight: bold;
+    font-size: larger;
+}
+
+@media (hover: hover) {
+  .homepg-btn:hover {
+    background-color: #747474;
+    box-shadow: 5px 5px 10px 2px var(--btn-shadow-color);
+    cursor: pointer;
+  }
+}
+
+.homepg-btn:active {
+  background-color: #cccccc;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
