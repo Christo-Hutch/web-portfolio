@@ -3,6 +3,7 @@
   --bg-color: #ffffff;
   --titl-conta-color: #ffffff;
   --titl-text-color: #000000;
+  --titl-shadow-color: rgba(0, 0, 0, 0.2);
   --btn-shadow-color: rgba(0, 0, 0, 0.2);
   --btn-color: #a3a3a3;
   --btn-text-color: #000000;
@@ -14,6 +15,7 @@
     --bg-color: #121212;
     --titl-conta-color: #808080;
     --titl-text-color: #ffffff;
+    --titl-shadow-color: rgba(255, 255, 255, 0.2);
     --btn-shadow-color: rgba(255, 255, 255, 0.2);
     --btn-color: #494949;
     --btn-text-color: #ffffff;
@@ -56,7 +58,7 @@ body {
 .title-container {
     height: clamp(100px, 45%, 300px);
     background-color: var(--titl-conta-color);
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 2px var(--titl-shadow-color);
     border-radius: 25px;
     padding: 10px;
     color: var(--titl-text-color);
