@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
-      <p>Work In Progress</p>
+        <div class="main-container">
+            <h1>Contact Details</h1>
+            <p onclick="navigator.clipboard.writeText('{{ email }}')" style="cursor: pointer;"><b>Email:</b> {{ email }}</p>
+        </div>
     </body>
 </html>

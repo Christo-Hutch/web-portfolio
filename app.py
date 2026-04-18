@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 import os
 
+from data_to_web import get_details
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,7 +19,8 @@ def journey_page():
 
 @app.route('/contact')
 def contact_page():
-    return render_template("contact.html")
+    details = get_details()
+    return render_template("contact.html", email=details['email'])
 
 if __name__ == '__main__':
     app.run()
