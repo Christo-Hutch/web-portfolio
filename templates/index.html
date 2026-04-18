@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
         <link rel="manifest" href="{{ url_for('static', filename='images/site.webmanifest') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="main-container">
@@ -22,5 +23,6 @@
                 <a href="{{ url_for('contact_page') }}"class="homepg-btn">Contact Info</a>
             </div>
         </div>
+        <i class="fa fa-github" style="position: fixed; bottom: 10px; left: 10px; font-size: 32px; cursor: pointer;" onclick="window.open('https://github.com/Christo-Hutch/web-portfolio', '_blank');"></i>
     </body>
 </html>
