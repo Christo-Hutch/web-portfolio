@@ -11,3 +11,28 @@ def get_details():
         DETAILS[details_list[i].strip()] = details_list[i + 1].strip()
 
     return DETAILS
+
+def get_projects():
+    PROJECTS = []
+    
+    try:
+        with open("data/projects.txt", "r") as projects_file:
+            raw_data = projects_file.read()
+    except FileNotFoundError:
+        return []
+
+    project_chunks = raw_data.split('===')
+
+    for chunk in project_chunks:
+        lines = chunk.strip().split('\n')
+        project = {}
+        
+        for line in lines:
+            parts = line.split(' - ', 1)
+            if len(parts) == 2:
+                project[parts[0].strip()] = parts[1].strip()
+        
+        if project:
+            PROJECTS.append(project)
+
+    return PROJECTS

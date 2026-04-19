@@ -1,0 +1,13 @@
+name - Mastermind Game
+type - Game
+language - Python
+start date - 02/02/2025
+completion date - 03/04/2025
+description - Step into the role of the ultimate Codebreaker in this timeless game of logic and deduction. Your opponent has hidden a secret sequence of colors—it’s up to you to uncover it in ten moves or less. With every guess, you’ll receive vital clues. Use your wits to analyze the feedback, narrow down the possibilities, and prove your mental superiority. It’s a battle of minds where every move counts.
+===
+name - Pathfinding Visualizer
+type - Educational Tool / Algorithm Simulation
+language - Python
+start date - 05/12/2025
+completion date - 06/02/2025
+description - Navigate the maze of efficiency with this interactive pathfinding tool. Built to demystify complex algorithms, this project allows users to place obstacles and set start/end points to watch Dijkstra’s or A* algorithms work in real-time. Witness how logic maneuvers through bottlenecks and finds the shortest path across a grid-based map. It is a visual deep-dive into the intersection of graph theory and clean, responsive UI design.
