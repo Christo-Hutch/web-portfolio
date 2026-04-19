@@ -1,5 +1,5 @@
 def get_details():
-    details_file = open("data/personal-details", "r")
+    details_file = open("data/personal-details.txt", "r")
 
     raw_details = details_file.read()
 
