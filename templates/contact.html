@@ -13,6 +13,13 @@
         <div class="main-container">
             <h1>Contact Details</h1>
             <p onclick="navigator.clipboard.writeText('{{ email }}')" style="cursor: pointer;"><b>Email:</b> {{ email }}</p>
+
+            <div class="nav-row">
+                <a href="{{ url_for('projects_page') }}"class="homepg-btn">Projects</a>
+                <a href="{{ url_for('journey_page') }}"class="homepg-btn">My Journey</a>
+                <a class="homepg-btn" onclick="window.open('https://github.com/Christo-Hutch', '_blank');">GitHub</a>
+                <a href="{{ url_for('homepage') }}"class="homepg-btn">Homepage</a>
+            </div>
         </div>
     </body>
 </html>
