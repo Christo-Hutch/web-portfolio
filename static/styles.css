@@ -90,15 +90,6 @@ body {
   animation-delay: 0.5s;
 }
 
-.nav-row {
-  position: fixed; 
-  bottom: 0;
-  left: 0;
-  height: clamp(30px, 5%, 100px);
-  animation: slideUp 0.8s ease-out forwards;
-  animation-delay: 0.5s;
-}
-
 .homepg-btn {
   display: flex;
   justify-content: center;
@@ -127,6 +118,16 @@ body {
 
 .homepg-btn:active {
   background-color: #cccccc;
+}
+
+/* Non-Homepage Styling */
+.nav-row {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  height: clamp(30px, 5%, 100px);
+  animation: slideUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes slideOut {
