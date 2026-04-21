@@ -7,6 +7,8 @@
   --btn-shadow-color: rgba(0, 0, 0, 0.2);
   --btn-color: #a3a3a3;
   --btn-text-color: #000000;
+  --project-border-color: #000000;
+  --project-text-color: #000000;
 }
 
 /* Dark Mode variables */
@@ -19,6 +21,8 @@
     --btn-shadow-color: rgba(255, 255, 255, 0.2);
     --btn-color: #494949;
     --btn-text-color: #ffffff;
+    --project-border-color: #ffffff;
+    --project-text-color: #ffffff;
   }
 }
 
@@ -41,7 +45,7 @@ body {
 
 .main-container {
   display: flex;
-  width: 75%;
+  width: 65%;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -128,6 +132,47 @@ body {
   height: clamp(30px, 5%, 100px);
   animation: slideUp 0.8s ease-out forwards;
   animation-delay: 0.5s;
+}
+
+/* Projects Page Styling */
+.projects-main-container {
+  width: 65%;
+  overflow-y: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  --item-height: 400px;
+}
+
+.project-card {
+  height: var(--item-height);
+  border-radius: 20px;
+  color: var(--project-text-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:nth-child(even) {
+  transform: translateY(calc(var(--item-height) / 2 + 20px));
+}
+
+.projects-grid {
+  margin-bottom: calc(var(--item-height) / 2 + 60px);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card:nth-child(even) {
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideOut {
