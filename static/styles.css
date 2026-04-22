@@ -173,6 +173,10 @@ body {
   .project-card:nth-child(even) {
     transform: translateY(0);
   }
+
+  .main-container, .projects-main-container {
+    width: 90%;
+  }
 }
 
 @keyframes slideOut {
