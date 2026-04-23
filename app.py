@@ -20,7 +20,7 @@ def journey_page():
 @app.route('/contact')
 def contact_page():
     details = get_details()
-    return render_template("contact.html", email=details['email'])
+    return render_template("contact.html", details=details)
 
 if __name__ == '__main__':
     app.run()
