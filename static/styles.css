@@ -127,7 +127,7 @@ body {
 /* Non-Homepage Styling */
 .nav-row {
   position: fixed; 
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   height: clamp(30px, 5%, 100px);
   animation: slideUp 0.8s ease-out forwards;
@@ -170,12 +170,18 @@ body {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
   .project-card:nth-child(even) {
     transform: translateY(0);
   }
 
   .main-container, .projects-main-container {
     width: 90%;
+  }
+
+  .nav-btn {
+    font-size: small;
+    padding: 2px;
   }
 }
 
