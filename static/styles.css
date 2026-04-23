@@ -94,7 +94,7 @@ body {
   animation-delay: 0.5s;
 }
 
-.homepg-btn {
+.nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,14 +113,14 @@ body {
 }
 
 @media (hover: hover) {
-  .homepg-btn:hover {
+  .nav-btn:hover {
     background-color: #747474;
     box-shadow: 5px 5px 10px 2px var(--btn-shadow-color);
     cursor: pointer;
   }
 }
 
-.homepg-btn:active {
+.nav-btn:active {
   background-color: #cccccc;
 }
 
