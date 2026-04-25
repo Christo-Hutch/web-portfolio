@@ -11,6 +11,15 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
     <body>
-      <p>Work In Progress</p>
+      <div class="main-container">
+            <p>Work In Progress</p>
+
+            <div class="homepg-nav-row">
+                <a href="{{ url_for('projects_page') }}" class="nav-btn">Projects</a>
+                <a onclick="window.open('https://github.com/Christo-Hutch', '_blank');" class="nav-btn">GitHub</a>
+                <a href="{{ url_for('contact_page') }}" class="nav-btn">Contact Info</a>
+                <a href="{{ url_for('homepage') }}" class="nav-btn">Homepage</a>
+            </div>
+      </div>
     </body>
 </html>
