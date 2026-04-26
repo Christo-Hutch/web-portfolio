@@ -149,13 +149,31 @@ body {
 }
 
 .project-card {
-  height: var(--item-height);
-  border-radius: 20px;
-  color: var(--project-text-color);
   display: flex;
-  align-items: center;
-  padding: 20px;
-  transition: transform 0.3s ease;
+  flex-direction: column; /* Stack H1 over P */
+  justify-content: center;
+  min-height: var(--item-height, 200px);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--project-text-color);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.project-card h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  opacity: 0.8;
 }
 
 .project-card:nth-child(even) {

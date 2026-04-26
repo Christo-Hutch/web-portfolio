@@ -13,12 +13,18 @@
     <body>
         <div class="projects-main-container">
             <div class="projects-grid">
-                <div class="project-card">Project 1</div>
-                <div class="project-card">Project 2</div>
-                <div class="project-card">Project 3</div>
-                <div class="project-card">Project 4</div>
-                <div class="project-card">Project 5</div>
-                <div class="project-card">Project 6</div>
+                {% for project in projects %}
+                <div class="project-card">
+                    <h1>{{ project.name }}</h1>
+                    <p>
+                        <b>Type:</b> {{ project.type }}<br>
+                        <b>Language:</b> {{ project.language }}<br>
+                        <b>Start Date:</b> {{ project.start_date }}<br>
+                        <b>Completion Date:</b> {{ project.completion_date }}<br>
+                        <b>Description:</b> {{ project.description }}
+                    </p>
+                </div>
+                {% endfor %}
             </div>
             <div class="nav-row">
                 <a href="{{ url_for('journey_page') }}" class="nav-btn">My Journey</a>
