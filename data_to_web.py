@@ -1,9 +1,11 @@
+import re
+
 def get_details():
     details_file = open("data/personal-details.txt", "r")
 
-    raw_details = details_file.read()
+    raw_data = details_file.read()
 
-    details_list = raw_details.split(' - ')
+    details_list = raw_data.split(' - ')
 
     DETAILS = {}
 
@@ -36,3 +38,14 @@ def get_projects():
             PROJECTS.append(project)
 
     return PROJECTS
+
+def get_journey():
+    journey_file = open("data/my-journey.txt", "r")
+
+    raw_data = journey_file.read()
+
+    cleaned_data = re.sub(r'(?<!\n)\n(?!\n)', ' ', raw_data)
+
+    journey_list = cleaned_data.split('\n\n')
+
+    return journey_list
