@@ -43,13 +43,16 @@ body {
   background-color: var(--bg-color);
 }
 
-.main-container {
+.main-container, .journey-main-container {
   display: flex;
   width: 65%;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+}
+
+.main-container {
+  align-items: center;
 }
 
 /* Homepage Styling */
