@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import os
 
-from data_to_web import get_details, get_projects
+from data_to_web import get_details, get_projects, get_journey
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ def projects_page():
 
 @app.route('/journey')
 def journey_page():
-    return render_template("journey.html")
+    return render_template("journey.html", journey=get_journey())
 
 @app.route('/contact')
 def contact_page():

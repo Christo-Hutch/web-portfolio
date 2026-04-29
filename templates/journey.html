@@ -12,7 +12,9 @@
     </head>
     <body>
       <div class="main-container">
-            <p>Work In Progress</p>
+            {% for paragraph in journey %}
+                <p>{{ paragraph }}</p>
+            {% endfor %}
 
             <div class="nav-row">
                 <a href="{{ url_for('projects_page') }}" class="nav-btn">Projects</a>
