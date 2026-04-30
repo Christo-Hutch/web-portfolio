@@ -40,12 +40,22 @@ def get_projects():
     return PROJECTS
 
 def get_journey():
-    journey_file = open("data/my-journey.txt", "r")
-
-    raw_data = journey_file.read()
+    with open("data/my-journey.txt", "r") as journey_file:
+        raw_data = journey_file.read()
 
     cleaned_data = re.sub(r'(?<!\n)\n(?!\n)', ' ', raw_data)
+    sections = [s.strip() for s in cleaned_data.split('\n\n') if s.strip()]
 
-    journey_list = cleaned_data.split('\n\n')
+    journey_dict = {}
+    current_date = None
 
-    return journey_list
+    for section in sections:
+        if section.startswith("DATE ="):
+            current_date = section.split("=")[1].strip()
+            journey_dict[current_date] = []
+        elif current_date:
+            journey_dict[current_date].append(section)
+
+    return journey_dict
+
+print(get_journey())
