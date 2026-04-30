@@ -57,5 +57,3 @@ def get_journey():
             journey_dict[current_date].append(section)
 
     return journey_dict
-
-print(get_journey())
