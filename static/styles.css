@@ -170,6 +170,11 @@ body {
   opacity: 0.8;
 }
 
+.journey-main-container p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .project-card:nth-child(even) {
   transform: translateY(calc(var(--item-height) / 2 + 20px));
 }
