@@ -54,8 +54,18 @@ body {
 .journey-main-container {
   display: flex;
   flex-direction: column;
+}
+
+.main-container {
   justify-content: center;
   height: 100vh;
+}
+
+.journey-main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .main-container {
@@ -170,7 +180,7 @@ body {
   opacity: 0.8;
 }
 
-.journey-main-container p {
+.journey-main-container p, h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -183,7 +193,7 @@ body {
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
   .project-card:nth-child(even) { transform: translateY(0); }
-  .main-container, .projects-main-container { width: 90%; }
+  .main-container, .projects-main-container, .journey-main-container { width: 90%; }
   .nav-btn { font-size: small; padding: 2px; }
 }
 
