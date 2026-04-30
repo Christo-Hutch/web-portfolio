@@ -12,16 +12,21 @@
     </head>
     <body>
       <div class="journey-main-container">
-            {% for paragraph in journey %}
-                <p>{{ paragraph }}</p>
+        {% for date, paragraphs in journey.items() %}
+            <h2>{{ date }}</h2>
+            {% for para in paragraphs %}
+                <p>{{ para }}</p>
             {% endfor %}
+            <br>
+            <br>
+        {% endfor %}
 
-            <div class="nav-row">
-                <a href="{{ url_for('projects_page') }}" class="nav-btn">Projects</a>
-                <a onclick="window.open('https://github.com/Christo-Hutch', '_blank');" class="nav-btn">GitHub</a>
-                <a href="{{ url_for('contact_page') }}" class="nav-btn">Contact Info</a>
-                <a href="{{ url_for('homepage') }}" class="nav-btn">Homepage</a>
-            </div>
+        <div class="nav-row">
+            <a href="{{ url_for('projects_page') }}" class="nav-btn">Projects</a>
+            <a onclick="window.open('https://github.com/Christo-Hutch', '_blank');" class="nav-btn">GitHub</a>
+            <a href="{{ url_for('contact_page') }}" class="nav-btn">Contact Info</a>
+            <a href="{{ url_for('homepage') }}" class="nav-btn">Homepage</a>
+        </div>
       </div>
     </body>
 </html>
