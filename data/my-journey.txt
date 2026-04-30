@@ -1,5 +1,18 @@
-This is my journey
+DATE = 30/04/2026
 
-this is a new paragraph 
+My interest in programming/technology most likely stems from my love for video games as a child.
+Much to the dismay of my parents, I would try and do nothing but play pursuit-force on my PSP 24/7,
+365. However, as I matured and grew up, I knew that trying to become the next big gaming YouTuber
+wasn't exactly a smart move so I needed to find something that interested me. Initially, video game
+design seemed like the perfect choice. But as I eventually discovered - through some success but mostly
+failure in Blender - this job would require more creativity and artistic ability then I initially
+thought. So after deciding that video game design wasn't for me, I didn't have much of an idea of what
+I wanted to do. I knew computer science was the subject for me, since I loved the problem solving of
+mathematics and adored learning about technology. Throughout my GCSE and A-level years, I continued
+to wonder which specific field I could go into: Cyber Security? Software Design? Computer Engineering?
+Maybe it was through process of elimination, or maybe it was due to my love for the TV series "Mr 
+Robot", but I eventually landed on cyber security and chose that when I ventured into university.
 
-and this is a new one
+Now that I'm in university, my passion for computer science has completely consumed my life and I spend
+most of my free time either learning about new technologies (like how RUST is replacing C) or tinchering
+with my Proxmox server and/or personal projects. 
