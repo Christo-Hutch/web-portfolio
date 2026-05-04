@@ -22,4 +22,4 @@ def contact_page():
     return render_template("contact.html", details=get_details())
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
