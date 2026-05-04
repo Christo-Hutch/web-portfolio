@@ -16,13 +16,19 @@
                 {% for project in projects %}
                 <div class="project-card">
                     <h1>{{ project.name }}</h1>
-                    <p>
-                        <b>Type:</b> {{ project.type }}<br>
-                        <b>Language:</b> {{ project.language }}<br>
-                        <b>Start Date:</b> {{ project.start_date }}<br>
-                        <b>Completion Date:</b> {{ project.completion_date }}<br>
-                        <b>Description:</b> {{ project.description }}
-                    </p>
+                    <p><b>Type:</b> {{ project.type }}</p><br>
+                    <p><b>Language:</b></p>
+                        {% if project.language == "Python" %}
+                            <img class="lang-logo" src="{{ url_for('static', filename='images/python-logo.png') }}" alt="Python Logo">
+                        {% elif project.language == "Java" %}
+                            <img class="lang-logo" src="{{ url_for('static', filename='images/java-logo.png') }}" alt="Java Logo">
+                        {% elif project.language == "C" %}
+                            <img class="lang-logo" src="{{ url_for('static', filename='images/c-logo.png') }}" alt="C Logo">
+                        {% endif %}
+                    <br>
+                    <p><b>Start Date:</b> {{ project.start_date }}<br>
+                    <p><b>Completion Date:</b> {{ project.completion_date }}<br>
+                    <p><b>Description:</b> {{ project.description }}</p>
                 </div>
                 {% endfor %}
             </div>
