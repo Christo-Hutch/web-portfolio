@@ -189,6 +189,10 @@ body {
   transform: translateY(calc(var(--item-height) / 2 + 20px));
 }
 
+.lang-logo {
+  max-width: 35%;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .projects-grid { grid-template-columns: 1fr; }
