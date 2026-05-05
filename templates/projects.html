@@ -17,7 +17,10 @@
                 <div class="project-card">
                     <header class="title-box">{{ project.name }}</header>
                     <div class="type-box"><b>Type:</b> {{ project.type }}</div>
-                    <div class="duration-box"><b>Date Started:</b> {{ project.start_date }}<br><b>Data Completed:</b> {{ project.completion_date }}</div>
+                    <div class="duration-box">
+                        <span><b>Date Started:</b> {{ project.start_date }}</span>
+                        <span><b>Date Completed:</b> {{ project.completion_date }}</span>
+                    </div>
                     <aside class="language-box">
                         <p style="padding: 5px;"><b>Language:</b> </p>
                         {% if project.language == "Python" %}
