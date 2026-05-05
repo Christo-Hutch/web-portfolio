@@ -15,9 +15,11 @@
             <div class="projects-grid">
                 {% for project in projects %}
                 <div class="project-card">
-                    <h1>{{ project.name }}</h1>
-                    <p><b>Type:</b> {{ project.type }}</p><br>
-                    <p><b>Language:</b></p>
+                    <header class="title-box">{{ project.name }}</header>
+                    <div class="type-box"><b>Type:</b> {{ project.type }}</div>
+                    <div class="duration-box"><b>Date Started:</b> {{ project.start_date }}<br><b>Data Completed:</b> {{ project.completion_date }}</div>
+                    <aside class="language-box">
+                        <p style="padding: 5px;"><b>Language:</b> </p>
                         {% if project.language == "Python" %}
                             <img class="lang-logo" src="{{ url_for('static', filename='images/python-logo.png') }}" alt="Python Logo">
                         {% elif project.language == "Java" %}
@@ -25,10 +27,8 @@
                         {% elif project.language == "C" %}
                             <img class="lang-logo" src="{{ url_for('static', filename='images/c-logo.png') }}" alt="C Logo">
                         {% endif %}
-                    <br>
-                    <p><b>Start Date:</b> {{ project.start_date }}<br>
-                    <p><b>Completion Date:</b> {{ project.completion_date }}<br>
-                    <p><b>Description:</b> {{ project.description }}</p>
+                    </aside>
+                    <footer class="description-box">{{ project.description }}</footer>
                 </div>
                 {% endfor %}
             </div>
@@ -41,3 +41,13 @@
         </div>
     </body>
 </html>
+
+<div class="card-container">
+  
+  
+
+  
+  
+  
+  
+</div>
