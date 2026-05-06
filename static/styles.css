@@ -41,7 +41,7 @@ body {
   align-items: center;
   background-color: var(--bg-color);
   color: var(--title-text-color);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier Prime', monospace;
 }
 
 /* --- 3. Shared Layout Containers --- */
