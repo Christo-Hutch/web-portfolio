@@ -244,6 +244,15 @@ body {
   transform: scaleX(1);
 }
 
+.journey-main-container p {
+  margin: 15px 0;
+  line-height: 125%;
+}
+
+.journey-main-container h1 {
+  margin-bottom: 5px;
+}
+
 /* --- 7. Responsive Adjustments --- */
 @media (max-width: 768px) {
   .main-container, 
