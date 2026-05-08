@@ -120,6 +120,7 @@ body {
   font-size: larger;
   text-decoration: none;
   text-align: center;
+  text-wrap-mode: nowrap;
 }
 
 .nav-btn:active { 
