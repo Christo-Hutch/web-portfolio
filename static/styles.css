@@ -77,7 +77,7 @@ body {
 
 .journey-main-container {
   min-height: 100vh;
-  padding-bottom: 80px;
+  padding: 20px 0 80px 0;
 }
 
 .projects-main-container { 
