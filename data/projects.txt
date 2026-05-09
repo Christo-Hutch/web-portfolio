@@ -1,0 +1,5 @@
+name - Log Analyser
+type - Utility
+language - Java
+github_url - https://github.com/Christo-Hutch/multi-threaded-log-analyser
+description - A log analyser which utilises various Java programming techniques. I started this project to help me understand the deeper architectural structures used in more advanced Java projects. These techniques include: enums, inheritance, records, custom exceptions and threads. I also used this project to help me learn how to use Git in a more professional manner, which is evident in the 'cleaner' git history. 
