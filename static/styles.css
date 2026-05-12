@@ -109,7 +109,7 @@ body {
 }
 
 .nav-btn {
-  width: clamp(150px, 15%, 300px);
+  width: clamp(80px, 17%, 300px);
   height: 100%;
   margin: 0 10px;
   border: 0;
@@ -117,10 +117,9 @@ body {
   background-color: var(--btn-color);
   color: var(--btn-text-color);
   font-weight: bold;
-  font-size: larger;
+  font-size: 1rem; 
   text-decoration: none;
   text-align: center;
-  text-wrap-mode: nowrap;
 }
 
 .nav-btn:active { 
@@ -271,9 +270,13 @@ body {
     transform: translateY(0); 
   }
 
+  .homepg-nav-row {
+    height: clamp(30px, 7%, 100px);
+  }
+
   .nav-btn { 
     padding: 2px;
-    font-size: small; 
+    font-size: 0.75rem; 
   }
 }
 
