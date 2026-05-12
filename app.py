@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 import os
 
 from data_to_web import get_details, get_projects, get_journey
@@ -20,6 +20,10 @@ def journey_page():
 @app.route('/contact')
 def contact_page():
     return render_template("contact.html", details=get_details())
+
+@app.route('/download')
+def downloadFile ():
+    return send_file("data/CV.pdf", as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
