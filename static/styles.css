@@ -244,6 +244,7 @@ body {
   transform: scaleX(1);
 }
 
+/* My Journey Components */
 .journey-main-container p {
   margin: 15px 0;
   line-height: 125%;
@@ -253,6 +254,7 @@ body {
   margin-bottom: 5px;
 }
 
+/* Contact Info Components */
 .contact-entry {
     cursor: pointer;
     transition: all 0.2s ease;
