@@ -275,6 +275,36 @@ body {
     transition: all 0.05s ease;
 }
 
+/* Homepage Components */
+.repo-footer-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.repo-footer-link .fa-github {
+    font-size: 32px;
+}
+
+.repo-footer-link .hover-text {
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-width 0.3s ease;
+}
+
+.repo-footer-link:hover .hover-text {
+    opacity: 1;
+    max-width: 250px;
+}
+
 /* --- 7. Responsive Adjustments --- */
 @media (max-width: 768px) {
   .main-container, 
