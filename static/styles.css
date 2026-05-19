@@ -297,6 +297,7 @@ body {
   .nav-btn { 
     padding: 2px;
     font-size: 0.75rem; 
+    height: 75%;
   }
 }
 
