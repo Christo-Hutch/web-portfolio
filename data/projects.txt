@@ -3,3 +3,9 @@ type - Utility
 language - Java
 github_url - https://github.com/Christo-Hutch/multi-threaded-log-reader
 description - A log reader which utilises various Java programming techniques. I started this project to help me understand the deeper architectural structures used in more advanced Java projects. These techniques include: enums, inheritance, records, custom exceptions and threads. I also used this project to help me learn how to use Git in a more professional manner, which is evident in the 'cleaner' git history. 
+===
+name - Mastermind Game
+type - Game
+language - Python
+github_url - https://github.com/Christo-Hutch/mastermind-game
+description - A computer game based on the Mastermind board game. I attempted this project in the past, however, due to an error in the project which myself and even AI agents couldn't solve, I quit it prematurely. Despite this, I decided to try again but made sure to create numerous error checks and exceptions to prevent a situation similar to my first attempt. This project uses an Object-Oriented programming paradigm for the components of the project: board, round and game. Whilst the core gameplay loop is simple, the complexity of the project comes from the various features which allow for fully customisable rounds/games to be played by the user.
