@@ -14,5 +14,19 @@ Maybe it was through process of elimination, or maybe it was due to my love for 
 Robot", but I eventually landed on cyber security and chose that when I ventured into university.
 
 Now that I'm in university, my passion for computer science has completely consumed my life and I spend
-most of my free time either learning about new technologies (like how RUST is replacing C) or tinchering
+most of my free time either learning about new technologies (like how RUST is replacing C) or tinkering
 with my Proxmox server and/or personal projects. 
+
+DATE = 04/11/2026
+
+Yikes, the gap between now and the last entry can't be ignored. I would like to say this is due to me
+being busy working on other projects and just not keeping up with this "journey". But in truth, I believe
+it was the year 1 university exams which tired me out and thus I took a break from my personal coding
+projects. However, now that I have started my second year of university, I want to pick up my personal
+projects again. 
+
+I have been considering writing a compiler using the C programming language. Whilst Python is currently
+the language I am most confident in, I believe that C is my favourite language due to it's history and
+importance in the development of other languages and operating systems. I also love the lack of features
+it offers which is something I hate about languages like C++. On the other hand I am open-minded; I can see myself
+learning C++ after I have become proficient in C.
