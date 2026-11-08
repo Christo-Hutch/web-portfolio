@@ -23,7 +23,7 @@ def contact_page():
 
 @app.route('/download')
 def downloadFile ():
-    return send_file("data/CV.pdf", as_attachment=True)
+    return send_file("data/CV.pdf", as_attachment=True, download_name="Christopher_Hutchinson_CV.pdf")
 
 if __name__ == '__main__':
     app.run(debug=True)
