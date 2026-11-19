@@ -1,0 +1,1 @@
+A simple portfolio website, which uses Python (flask) as it's backend and simple HTML, CSS and Javascript as it's frontend. This isn't impressive by any means, in fact this website is intended to be extremely minimal since web development isn't my forte and the purpose of this website being to simply show my projects in a clean, simple way.
